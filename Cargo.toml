@@ -1,0 +1,14 @@
+[package]
+name = "airassist"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+paho-mqtt = { version = "0.12", default-features=false, features=["bundled"] }
+reqwest = "0.12"
+serde-xml-rs = "0.6"
+serde = { version = "1", features = ["derive"]}
+thiserror = "1.0.63"
+anyhow = "1.0.86"
+futures = "0.3.30"
